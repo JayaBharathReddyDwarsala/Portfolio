@@ -1,0 +1,1112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaya Bharath | Senior Embedded & HMI Engineer Portfolio</title>
+    <meta name="description"
+        content="Senior Software Engineer & Freelancer specializing in C/C++, Qt/QML, embedded HMIs, real-time TCP/UDP telemetry, and automotive simulation systems.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Background Canvas for Circuit Particles -->
+    <canvas id="hero-canvas"></canvas>
+
+    <!-- Header / Navigation -->
+    <header class="main-header">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="cyber-bracket">&lt;</span>JB<span class="cyber-dot">.</span>dev<span
+                    class="cyber-bracket">&gt;</span>
+            </a>
+
+            <nav class="nav-links">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#pain-points" class="nav-link">Solutions</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#lab" class="nav-link">Interactive Lab</a>
+                <a href="#estimator" class="nav-link">Calculator</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#contact" class="nav-link nav-cta">Book Consultation</a>
+            </nav>
+
+            <button class="mobile-nav-toggle" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-container">
+                <div class="hero-badge">
+                    <span class="status-dot green"></span>
+                    <span class="badge-text">SYSTEM STATUS: ACTIVE // AVAILABILITY: 15 HRS/WEEK</span>
+                </div>
+
+                <h1 class="hero-title">
+                    JAYA BHARATH REDDY <br>
+                    <span class="highlight">DWARSALA</span>
+                </h1>
+
+                <h2 class="hero-subtitle">
+                    Senior Embedded & <span id="typing-text"></span>
+                </h2>
+
+                <p class="hero-description">
+                    Helping OEMs, R&D Labs, and Tech Startups bring high-integrity embedded interfaces and real-time
+                    network communications to market. Delivering sub-millisecond telemetry logic, modular MFC/Qt DLLs,
+                    and clean, MISRA-compliant modern C++ on time.
+                </p>
+
+                <div class="hero-stats">
+                    <div class="stat-card">
+                        <span class="stat-number">4+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">On-Time Delivery</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">&lt;2ms</span>
+                        <span class="stat-label">Telemetry Latency</span>
+                    </div>
+                </div>
+
+                <div class="hero-actions">
+                    <a href="#estimator" class="btn btn-primary"><i class="fa-solid fa-calculator"></i> Calculate
+                        Project Cost</a>
+                    <a href="#lab" class="btn btn-secondary"><i class="fa-solid fa-flask"></i> Try Live Simulators</a>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span class="mouse-icon"><span class="mouse-wheel"></span></span>
+                <span class="scroll-text">SCROLL TO ANALYZE</span>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">// PROFILE SUMMARY</span>
+                    <h2 class="section-title">Bridging Hardware & User Experience</h2>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-card intro-card">
+                        <i class="fa-solid fa-microchip card-icon"></i>
+                        <h3>The Engineering Mindset</h3>
+                        <p>
+                            I specialize in building software that interacts with the physical world. Whether it is
+                            controlling an agitation subsystem on an agricultural giant like a John Deere sprayer, or
+                            building real-time war gaming simulation modules for defense research (CABS - DRDO), I focus
+                            on three core principles: **safety, responsiveness, and clean architecture**.
+                        </p>
+                    </div>
+
+                    <div class="about-card value-card">
+                        <i class="fa-solid fa-bolt card-icon"></i>
+                        <h3>High Performance</h3>
+                        <p>
+                            Writing code for embedded platforms requires absolute resource consciousness. I write highly
+                            optimized, MISRA-compliant C/C++ that processes large telemetry packets under tight timing
+                            constraints without memory leaks.
+                        </p>
+                    </div>
+
+                    <div class="about-card telemetry-card">
+                        <i class="fa-solid fa-network-wired card-icon"></i>
+                        <h3>Seamless Connectivity</h3>
+                        <p>
+                            From low-level protocols (UART, SPI, I2C, CAN) to networking channels (TCP/IP, UDP), I
+                            design robust communication modules that bind distributed software systems together
+                            reliably.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Client Pain Points Section -->
+        <section id="pain-points" class="pain-points-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">// SYSTEM INTEGRATION CHALLENGES</span>
+                    <h2 class="section-title">Solving Your Core Engineering Bottlenecks</h2>
+                    <p class="section-subtitle">Why engineering managers and hardware founders hire me to deliver
+                        results.</p>
+                </div>
+
+                <div class="pain-grid">
+                    <div class="pain-card">
+                        <div class="pain-header">
+                            <span class="pain-num">01</span>
+                            <h3>Waiting on Target Hardware?</h3>
+                        </div>
+                        <p><strong>The Bottleneck:</strong> UI development is halted because target boards, physical
+                            displays, or mechanical sensors are delayed or unavailable.</p>
+                        <p class="pain-solution"><i class="fa-solid fa-circle-check text-green"></i> <strong>My
+                                Solution:</strong> I create high-fidelity Software-in-the-Loop (SIL) simulators (like
+                            the radar and sprayer consoles shown below) to mock and validate 95% of your code before the
+                            hardware arrives.</p>
+                    </div>
+
+                    <div class="pain-card">
+                        <div class="pain-header">
+                            <span class="pain-num">02</span>
+                            <h3>Struggling with Legacy Codebases?</h3>
+                        </div>
+                        <p><strong>The Bottleneck:</strong> Older Win32, MFC, or raw C drivers are too high-risk to
+                            rewrite from scratch, but must integrate with modern graphical layouts.</p>
+                        <p class="pain-solution"><i class="fa-solid fa-circle-check text-green"></i> <strong>My
+                                Solution:</strong> I compile modular C++ wrappers and MFC DLL bridges that hook legacy
+                            scenario software to modern, performant Qt/QML dashboards cleanly.</p>
+                    </div>
+
+                    <div class="pain-card">
+                        <div class="pain-header">
+                            <span class="pain-num">03</span>
+                            <h3>Clunky, Laggy User Interfaces?</h3>
+                        </div>
+                        <p><strong>The Bottleneck:</strong> Embedded display interfaces stutter or drop input updates
+                            when processing large telemetry packets or CAN bus data streams.</p>
+                        <p class="pain-solution"><i class="fa-solid fa-circle-check text-green"></i> <strong>My
+                                Solution:</strong> I architect Qt/QML systems utilizing ring-buffers and separate C++
+                            rendering threads, achieving a locked 60 FPS refresh cycle on low-cost hardware.</p>
+                    </div>
+
+                    <div class="pain-card">
+                        <div class="pain-header">
+                            <span class="pain-num">04</span>
+                            <h3>Failing Safety & Compliance?</h3>
+                        </div>
+                        <p><strong>The Bottleneck:</strong> Unstructured C++ codebases leading to hard-to-track memory
+                            leaks, data races, or compiler-specific crashes under high loads.</p>
+                        <p class="pain-solution"><i class="fa-solid fa-circle-check text-green"></i> <strong>My
+                                Solution:</strong> I write strict, MISRA-compliant code audited with memory analyzers,
+                            and back every integration with robust Google Test unit test rigs.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Freelance Services Section -->
+        <section id="services" class="services-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">// FREELANCE SERVICES</span>
+                    <h2 class="section-title">What I Can Build For Your Team</h2>
+                </div>
+
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fa-solid fa-desktop"></i></div>
+                        <h3>Custom Qt/QML HMI Development</h3>
+                        <p>High-fidelity, responsive GUI layouts for embedded Linux devices and Windows desktop
+                            utilities. Seamless QML-to-C++ business logic integration.</p>
+                        <ul class="service-bullets">
+                            <li>Custom dial & gauge animations</li>
+                            <li>Fluid gesture and touch interactions</li>
+                            <li>Multi-threaded data rendering</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fa-solid fa-arrow-right-arrow-left"></i></div>
+                        <h3>Telemetry & Protocol Modules</h3>
+                        <p>High-performance TCP/UDP client-server wrappers, custom packet serialization, and hardware
+                            bus interface integrations (CAN, Serial, I2C).</p>
+                        <ul class="service-bullets">
+                            <li>Low-jitter socket programming</li>
+                            <li>JSON/Binary packet marshalling</li>
+                            <li>Automated data logging & playback</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fa-solid fa-gamepad"></i></div>
+                        <h3>Simulators & Test Automation</h3>
+                        <p>Custom software-in-the-loop (SIL) simulators to emulate real-world hardware, sensor feeds,
+                            and complex scenario managers for testing.</p>
+                        <ul class="service-bullets">
+                            <li>MFC / C++ scenarios DLL building</li>
+                            <li>Mock telemetry transmitters</li>
+                            <li>Google Test suite integration</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fa-solid fa-gauge-high"></i></div>
+                        <h3>Performance & Latency Audits</h3>
+                        <p>Analyzing legacy C++ or Qt codebases to isolate CPU bottlenecks, reduce memory footprint, and
+                            resolve real-time packet loss.</p>
+                        <ul class="service-bullets">
+                            <li>Profiling and memory leak checks</li>
+                            <li>Multithreading & race condition fixes</li>
+                            <li>MISRA C++ guidelines validation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Lab Section -->
+        <section id="lab" class="lab-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">// THE INTERACTIVE LAB</span>
+                    <h2 class="section-title">Real-Time Simulation Showcase</h2>
+                    <p class="section-subtitle">Interact with simulated versions of industrial and defense systems I
+                        have engineered.</p>
+                </div>
+
+                <div class="lab-tabs">
+                    <button class="lab-tab-btn active" data-target="sprayer-sim">
+                        <i class="fa-solid fa-tractor"></i> John Deere Sprayer UI
+                    </button>
+                    <button class="lab-tab-btn" data-target="radar-sim">
+                        <i class="fa-solid fa-radar"></i> DRDO War Sim Radar
+                    </button>
+                </div>
+
+                <div class="lab-viewport glass-card">
+                    <!-- Dashboard 1: John Deere Sprayer Agitation subsystem -->
+                    <div id="sprayer-sim" class="lab-panel active">
+                        <div class="sim-header">
+                            <div class="sim-title-group">
+                                <span class="sim-badge green">ONLINE</span>
+                                <h4>JOHN DEERE - AGITATION SUBSYSTEM HMI</h4>
+                            </div>
+                            <div class="sim-actions">
+                                <button id="sprayer-power-btn" class="sim-power-btn active">
+                                    <i class="fa-solid fa-power-off"></i> SYSTEM POWER
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="sprayer-grid">
+                            <!-- Left: Visual Gagues and Tank -->
+                            <div class="sprayer-visuals">
+                                <div class="tank-container">
+                                    <div class="tank-label">AGITATION TANK</div>
+                                    <div class="fluid-body">
+                                        <div class="wave"></div>
+                                        <div class="fluid-percentage">58%</div>
+                                    </div>
+                                    <div class="sprayer-jets">
+                                        <span class="jet jet-left"></span>
+                                        <span class="jet jet-right"></span>
+                                    </div>
+                                </div>
+
+                                <div class="gauge-row">
+                                    <div class="gauge-container">
+                                        <div class="gauge-title">AGITATION SPEED</div>
+                                        <div class="gauge-box">
+                                            <span id="rpm-value" class="gauge-readout">1200</span>
+                                            <span class="gauge-unit">RPM</span>
+                                        </div>
+                                    </div>
+                                    <div class="gauge-container">
+                                        <div class="gauge-title">SYSTEM PRESSURE</div>
+                                        <div class="gauge-box">
+                                            <span id="pressure-value" class="gauge-readout">4.2</span>
+                                            <span class="gauge-unit">BAR</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Right: Controls & Logs -->
+                            <div class="sprayer-controls">
+                                <div class="control-group">
+                                    <label for="rpm-slider">Set Agitation Target: <span id="rpm-target-lbl">1200
+                                            RPM</span></label>
+                                    <div class="slider-wrapper">
+                                        <span class="range-limit">0</span>
+                                        <input type="range" id="rpm-slider" min="0" max="2500" value="1200" step="50">
+                                        <span class="range-limit">2500</span>
+                                    </div>
+                                </div>
+
+                                <div class="toggle-row">
+                                    <button id="valve-btn" class="toggle-btn active">
+                                        <i class="fa-solid fa-water"></i> Agitation Valve: <span
+                                            id="valve-state">OPEN</span>
+                                    </button>
+                                    <button id="bypass-btn" class="toggle-btn">
+                                        <i class="fa-solid fa-rotate-left"></i> Bypass Flow: <span
+                                            id="bypass-state">CLOSED</span>
+                                    </button>
+                                </div>
+
+                                <div class="diagnostics-box">
+                                    <div class="diag-header">SYSTEM DIAGNOSTICS</div>
+                                    <div class="diag-indicators">
+                                        <div class="indicator-item">
+                                            <span class="status-light green" id="flow-light"></span> Flow Sensor
+                                        </div>
+                                        <div class="indicator-item">
+                                            <span class="status-light green" id="temp-light"></span> Engine Temp
+                                        </div>
+                                        <div class="indicator-item">
+                                            <span class="status-light green" id="bypass-light"></span> Pressure relief
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="console-box">
+                                    <div class="console-header">Qt HMI Telemetry Bus Log</div>
+                                    <div class="console-lines" id="sprayer-log">
+                                        <div class="log-line text-system">[SYS] HMI agitation subsystem module
+                                            initialized.</div>
+                                        <div class="log-line text-telemetry">[TELEMETRY] Agitation Speed: 1200 RPM,
+                                            Target: 1200 RPM.</div>
+                                        <div class="log-line text-telemetry">[TELEMETRY] Flow valve: open, pressure
+                                            stabilized.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Dashboard 2: CABS - DRDO War Gaming Radar Simulator -->
+                    <div id="radar-sim" class="lab-panel">
+                        <div class="sim-header">
+                            <div class="sim-title-group">
+                                <span class="sim-badge blue">SWEEPING</span>
+                                <h4>DRDO MySIR - REAL-TIME UDP SCENARIO SIMULATOR</h4>
+                            </div>
+                            <div class="sim-actions">
+                                <button id="radar-reset-btn" class="sim-action-btn">
+                                    <i class="fa-solid fa-arrows-rotate"></i> Reset Scenario
+                                </button>
+                                <button id="radar-trigger-btn" class="sim-action-btn primary">
+                                    <i class="fa-solid fa-location-crosshairs"></i> Inject UDP Target
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="radar-grid">
+                            <!-- Left: Radar Screen -->
+                            <div class="radar-screen-container">
+                                <canvas id="radar-canvas" width="450" height="350"></canvas>
+                            </div>
+
+                            <!-- Right: UDP Packet Terminal -->
+                            <div class="radar-telemetry">
+                                <div class="terminal-stats">
+                                    <div class="t-stat">
+                                        <span class="t-label">UDP Rx Packets</span>
+                                        <span id="udp-pkt-count" class="t-val">102</span>
+                                    </div>
+                                    <div class="t-stat">
+                                        <span class="t-label">Active Tracks</span>
+                                        <span id="radar-tracks" class="t-val">3</span>
+                                    </div>
+                                    <div class="t-stat">
+                                        <span class="t-label">Latency (UDP RX)</span>
+                                        <span class="t-val green">&lt; 1.2ms</span>
+                                    </div>
+                                </div>
+
+                                <div class="console-box full-console">
+                                    <div class="console-header">UDP Target Packet Receiver Terminal (Port: 5005)</div>
+                                    <div class="console-lines" id="radar-log">
+                                        <div class="log-line text-info">[NET] Listening on local socket
+                                            udp://0.0.0.0:5005...</div>
+                                        <div class="log-line text-info">[NET] Connected to MFC scenario simulation
+                                            engine DLL.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Cost & Scope Estimator Section -->
+        <section id="estimator" class="estimator-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">// BUDGET & SCOPE ESTIMATOR</span>
+                    <h2 class="section-title">Configure Your Project</h2>
+                    <p class="section-subtitle">Select your requirements below to calculate a preliminary effort
+                        estimate and cost projection instantly.</p>
+                </div>
+
+                <div class="estimator-grid">
+                    <!-- Left: Form Controls -->
+                    <div class="estimator-controls glass-card">
+                        <!-- Project Type Segments -->
+                        <div class="estimator-group">
+                            <label class="group-label">1. Select Project Scope</label>
+                            <div class="segment-selectors">
+                                <div class="segment-option active" data-type="hmi">
+                                    <i class="fa-solid fa-desktop"></i>
+                                    <span>HMI / GUI Development</span>
+                                </div>
+                                <div class="segment-option" data-type="telemetry">
+                                    <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                                    <span>Telemetry & Sockets</span>
+                                </div>
+                                <div class="segment-option" data-type="simulation">
+                                    <i class="fa-solid fa-gamepad"></i>
+                                    <span>Test Rigs & Simulators</span>
+                                </div>
+                                <div class="segment-option" data-type="optimization">
+                                    <i class="fa-solid fa-gauge-high"></i>
+                                    <span>Performance Auditing</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Dropdowns -->
+                        <div class="estimator-row">
+                            <div class="estimator-field">
+                                <label for="calc-platform">2. Target Platform</label>
+                                <select id="calc-platform">
+                                    <option value="linux">Embedded Linux (Yocto/Ubuntu)</option>
+                                    <option value="windows">Windows OS (Win32/MFC)</option>
+                                    <option value="cross">Cross-Platform (Linux & Windows)</option>
+                                </select>
+                            </div>
+                            <div class="estimator-field">
+                                <label for="calc-bus">3. Hardware Bus / Connection</label>
+                                <select id="calc-bus">
+                                    <option value="can">CAN Bus / J1939 Protocols</option>
+                                    <option value="tcpudp">Ethernet Sockets (TCP/UDP)</option>
+                                    <option value="serial">Low-level Serial (UART/SPI/I2C)</option>
+                                    <option value="none">None (Pure Software / Logic)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Speed selector segment -->
+                        <div class="estimator-group">
+                            <label class="group-label">4. Delivery Urgency</label>
+                            <div class="urgency-selector">
+                                <button class="urgency-btn active" data-urgency="standard">
+                                    <strong>Standard Flow</strong> (4-6 weeks)
+                                </button>
+                                <button class="urgency-btn" data-urgency="expedited">
+                                    <strong>Expedited Sweep</strong> (1-2 weeks)
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Results Card -->
+                    <div class="estimator-result glass-card">
+                        <div class="result-header">
+                            <i class="fa-solid fa-microchip"></i>
+                            <h4>PROJECT PRE-CHECK SHEET</h4>
+                        </div>
+
+                        <div class="result-details">
+                            <div class="detail-line">
+                                <span class="d-label">Configured Scope:</span>
+                                <span class="d-val highlight" id="summary-scope">HMI / GUI Development</span>
+                            </div>
+                            <div class="detail-line">
+                                <span class="d-label">Execution Environment:</span>
+                                <span class="d-val" id="summary-platform">Embedded Linux</span>
+                            </div>
+                            <div class="detail-line">
+                                <span class="d-label">Hardware Interface:</span>
+                                <span class="d-val" id="summary-bus">CAN Bus Protocols</span>
+                            </div>
+                        </div>
+
+                        <div class="result-calculations">
+                            <div class="calc-box">
+                                <span class="c-lbl">Estimated Effort</span>
+                                <span class="c-val" id="calc-hours">80 - 120 Hrs</span>
+                            </div>
+                            <div class="calc-box glowing">
+                                <span class="c-lbl">Estimated Investment</span>
+                                <span class="c-val text-green" id="calc-cost">$3,500 - $5,000</span>
+                            </div>
+                        </div>
+
+                        <button id="apply-quote-btn" class="btn btn-primary btn-block">
+                            <i class="fa-solid fa-clipboard-check"></i> LOCK ESTIMATE & INQUIRE
+                        </button>
+                        <p class="quote-notice">*Generated quote represents typical engineering timelines based on
+                            common specs. Full scope finalized upon NDA and engineering review.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Skills Section -->
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">// TECHNICAL STACK</span>
+                    <h2 class="section-title">Developer Diagnostic Console</h2>
+                </div>
+
+                <div class="terminal-shell glass-card">
+                    <div class="shell-header">
+                        <div class="shell-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <div class="shell-title">bash - jaya_bharath_skills.sh</div>
+                        <div class="shell-action"><i class="fa-solid fa-copy"></i></div>
+                    </div>
+
+                    <div class="shell-tabs">
+                        <button class="shell-tab active" data-skill="languages">languages.json</button>
+                        <button class="shell-tab" data-skill="frameworks">frameworks.json</button>
+                        <button class="shell-tab" data-skill="protocols">protocols.json</button>
+                        <button class="shell-tab" data-skill="tools">tools_and_os.json</button>
+                    </div>
+
+                    <div class="shell-content">
+                        <!-- Languages Tab -->
+                        <div id="skills-languages" class="skill-pane active">
+                            <div class="code-line"><span class="line-num">1</span><span
+                                    class="code-key">"languages"</span>: {</div>
+                            <div class="code-line"><span class="line-num">2</span> <span class="code-key">"C++"</span>:
+                                {</div>
+                            <div class="code-line"><span class="line-num">3</span> <span
+                                    class="code-key">"level"</span>: <span class="code-val">"Expert"</span>,</div>
+                            <div class="code-line"><span class="line-num">4</span> <span
+                                    class="code-key">"features"</span>: [<span class="code-val">"Modern C++
+                                    (11/14/17/20)"</span>, <span class="code-val">"STL"</span>, <span
+                                    class="code-val">"Multithreading"</span>, <span class="code-val">"Memory
+                                    Management"</span>, <span class="code-val">"OOP"</span>]</div>
+                            <div class="code-line"><span class="line-num">5</span> },</div>
+                            <div class="code-line"><span class="line-num">6</span> <span class="code-key">"C"</span>: {
+                            </div>
+                            <div class="code-line"><span class="line-num">7</span> <span
+                                    class="code-key">"level"</span>: <span class="code-val">"Advanced"</span>,</div>
+                            <div class="code-line"><span class="line-num">8</span> <span
+                                    class="code-key">"features"</span>: [<span class="code-val">"Embedded C"</span>,
+                                <span class="code-val">"Pointer Manipulation"</span>, <span class="code-val">"Hardware
+                                    Registers"</span>, <span class="code-val">"MISRA-C Compliance"</span>]</div>
+                            <div class="code-line"><span class="line-num">9</span> },</div>
+                            <div class="code-line"><span class="line-num">10</span> <span
+                                    class="code-key">"Python"</span>: {</div>
+                            <div class="code-line"><span class="line-num">11</span> <span
+                                    class="code-key">"level"</span>: <span class="code-val">"Intermediate"</span>,</div>
+                            <div class="code-line"><span class="line-num">12</span> <span
+                                    class="code-key">"features"</span>: [<span class="code-val">"Automation
+                                    Scripts"</span>, <span class="code-val">"TCP/IP Testing Harnesses"</span>, <span
+                                    class="code-val">"Data Parsing"</span>]</div>
+                            <div class="code-line"><span class="line-num">13</span> }</div>
+                            <div class="code-line"><span class="line-num">14</span>}</div>
+                        </div>
+
+                        <!-- Frameworks Tab -->
+                        <div id="skills-frameworks" class="skill-pane">
+                            <div class="code-line"><span class="line-num">1</span><span
+                                    class="code-key">"frameworks_and_libraries"</span>: {</div>
+                            <div class="code-line"><span class="line-num">2</span> <span class="code-key">"Qt
+                                    Framework"</span>: {</div>
+                            <div class="code-line"><span class="line-num">3</span> <span
+                                    class="code-key">"modules"</span>: [<span class="code-val">"Qt Core"</span>, <span
+                                    class="code-val">"Qt Widgets"</span>, <span class="code-val">"Qt Quick /
+                                    QML"</span>, <span class="code-val">"Qt Network"</span>, <span class="code-val">"Qt
+                                    Test"</span>],</div>
+                            <div class="code-line"><span class="line-num">4</span> <span
+                                    class="code-key">"use_case"</span>: <span class="code-val">"Highly responsive
+                                    GUI/HMI systems with optimized rendering and C++ signaling backends"</span></div>
+                            <div class="code-line"><span class="line-num">5</span> },</div>
+                            <div class="code-line"><span class="line-num">6</span> <span class="code-key">"MFC"</span>:
+                                {</div>
+                            <div class="code-line"><span class="line-num">7</span> <span
+                                    class="code-key">"use_case"</span>: <span class="code-val">"Legacy Windows desktop
+                                    layout maintaining, DLL wrappers construction, and backend scenario hookups"</span>
+                            </div>
+                            <div class="code-line"><span class="line-num">8</span> },</div>
+                            <div class="code-line"><span class="line-num">9</span> <span class="code-key">"Google Test
+                                    (GTest)"</span>: {</div>
+                            <div class="code-line"><span class="line-num">10</span> <span
+                                    class="code-key">"use_case"</span>: <span class="code-val">"Robust unit testing and
+                                    mock fixtures for high-integrity embedded control loops"</span></div>
+                            <div class="code-line"><span class="line-num">11</span> }</div>
+                            <div class="code-line"><span class="line-num">12</span>}</div>
+                        </div>
+
+                        <!-- Protocols Tab -->
+                        <div id="skills-protocols" class="skill-pane">
+                            <div class="code-line"><span class="line-num">1</span><span
+                                    class="code-key">"protocols_and_networking"</span>: {</div>
+                            <div class="code-line"><span class="line-num">2</span> <span class="code-key">"Socket
+                                    Communication"</span>: {</div>
+                            <div class="code-line"><span class="line-num">3</span> <span
+                                    class="code-key">"types"</span>: [<span class="code-val">"TCP/IP
+                                    Client-Server"</span>, <span class="code-val">"UDP Broadcast/Multicast"</span>],
+                            </div>
+                            <div class="code-line"><span class="line-num">4</span> <span
+                                    class="code-key">"reliability"</span>: <span class="code-val">"Custom checksum
+                                    validation, packet loss buffering, real-time serialization"</span></div>
+                            <div class="code-line"><span class="line-num">5</span> },</div>
+                            <div class="code-line"><span class="line-num">6</span> <span class="code-key">"Hardware
+                                    Busses"</span>: {</div>
+                            <div class="code-line"><span class="line-num">7</span> <span
+                                    class="code-key">"automotive"</span>: [<span class="code-val">"CAN Bus (Controller
+                                    Area Network)"</span>, <span class="code-val">"J1939"</span>],</div>
+                            <div class="code-line"><span class="line-num">8</span> <span
+                                    class="code-key">"embedded_ic"</span>: [<span class="code-val">"UART"</span>, <span
+                                    class="code-val">"SPI"</span>, <span class="code-val">"I2C"</span>]</div>
+                            <div class="code-line"><span class="line-num">9</span> }</div>
+                            <div class="code-line"><span class="line-num">10</span>}</div>
+                        </div>
+
+                        <!-- Tools & OS Tab -->
+                        <div id="skills-tools" class="skill-pane">
+                            <div class="code-line"><span class="line-num">1</span><span
+                                    class="code-key">"environments_and_utilities"</span>: {</div>
+                            <div class="code-line"><span class="line-num">2</span> <span class="code-key">"Operating
+                                    Systems"</span>: [<span class="code-val">"Linux (Ubuntu/Embedded)"</span>, <span
+                                    class="code-val">"Windows (Win32/Desktop API)"</span>],</div>
+                            <div class="code-line"><span class="line-num">3</span> <span class="code-key">"Development
+                                    Tools"</span>: [<span class="code-val">"Visual Studio"</span>, <span
+                                    class="code-val">"Qt Creator"</span>, <span class="code-val">"CMake"</span>, <span
+                                    class="code-val">"GCC/G++ Compiler Toolchains"</span>],</div>
+                            <div class="code-line"><span class="line-num">4</span> <span class="code-key">"Version
+                                    Control"</span>: [<span class="code-val">"Git (Multi-branch workflows, Submodules,
+                                    Rebases)"</span>],</div>
+                            <div class="code-line"><span class="line-num">5</span> <span
+                                    class="code-key">"Databases"</span>: [<span class="code-val">"MySQL"</span>, <span
+                                    class="code-val">"SQLite"</span>]</div>
+                            <div class="code-line"><span class="line-num">6</span>}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Professional Experience Timeline -->
+        <section id="experience" class="experience-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">// PROFESSIONAL EXPERIENCES</span>
+                    <h2 class="section-title">Career Milestones</h2>
+                </div>
+
+                <div class="timeline">
+                    <!-- Timeline Node 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Apr 2026 – Present</div>
+                        <div class="timeline-content glass-card">
+                            <div class="comp-header">
+                                <span class="comp-badge active">LATEST</span>
+                                <h3>Senior Software Engineer</h3>
+                            </div>
+                            <h4 class="comp-name">Tata Consultancy Services (TCS) Pvt. Ltd</h4>
+                            <p>Architecting software solutions and core user interface elements for advanced simulation
+                                rigs and high-capacity telemetry streams.</p>
+                            <ul class="timeline-points">
+                                <li>Develop Qt/QML based HMIs for telemetry tracking and real-time operator overrides.
+                                </li>
+                                <li>Engineered robust TCP/UDP socket subsystems, driving hardware-in-the-loop sensor
+                                    synchronization.</li>
+                                <li>Optimized C++ multi-threaded data processors, slashing data drop rates by 18% under
+                                    heavy loads.</li>
+                                <li>Configure cross-platform compilations, ensuring bug-free distributions on Windows
+                                    and Linux targets.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Node 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Dec 2024 – Feb 2026</div>
+                        <div class="timeline-content glass-card">
+                            <div class="comp-header">
+                                <h3>Senior Software Engineer</h3>
+                            </div>
+                            <h4 class="comp-name">Unical Systems Pvt. Ltd</h4>
+                            <p>Designed and deployed mission-critical tactical HMI and war-gaming simulation components
+                                for defense research projects.</p>
+                            <ul class="timeline-points">
+                                <li>Authored C++ and Qt simulation HMIs that process and visualize multi-node military
+                                    coordinate tracks.</li>
+                                <li>Structured highly performant UDP-based peer-to-peer data modules, maintaining packet
+                                    latency under 5ms.</li>
+                                <li>Built modular MFC DLLs to connect legacy simulator logic blocks with modern
+                                    graphical interfaces.</li>
+                                <li>Developed thread-safe circular buffers to buffer and stream rapid telemetry packet
+                                    flows.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Node 3 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">May 2022 – Dec 2024</div>
+                        <div class="timeline-content glass-card">
+                            <div class="comp-header">
+                                <h3>Software Engineer</h3>
+                            </div>
+                            <h4 class="comp-name">Automotive Robotics India Pvt. Ltd</h4>
+                            <p>Coded low-level interfaces, agitation controllers, and user controls for rugged
+                                agricultural vehicle machinery.</p>
+                            <ul class="timeline-points">
+                                <li>Crafted vehicle display panels using Qt/QML, optimizing graphics refresh cycles for
+                                    low-tier hardware.</li>
+                                <li>Structured object-oriented C++ state-machines representing machine agitation cycles
+                                    and safety bounds.</li>
+                                <li>Wrote exhaustive unit tests using Google Test, validating flow-rates, speed
+                                    regulation, and diagnostics.</li>
+                                <li>Managed multi-developer Git branches, performing strict reviews and continuous
+                                    integration runs.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Portfolio -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">// REPRESENTATIVE WORK</span>
+                    <h2 class="section-title">Project Case Studies</h2>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card glass-card">
+                        <div class="project-meta">
+                            <span class="proj-domain">AUTOMOTIVE / AGRICULTURE</span>
+                            <span class="proj-client">John Deere</span>
+                        </div>
+                        <h3 class="project-title">Sprayer Agitation Control Panel</h3>
+                        <p class="project-summary">Developed the embedded control GUI and underlying state machines for
+                            John Deere's chemical sprayer agitation subsystem.</p>
+                        <div class="project-tech">
+                            <span>Qt/QML</span>
+                            <span>Modern C++</span>
+                            <span>Google Test</span>
+                            <span>CAN J1939</span>
+                        </div>
+                        <div class="project-highlights">
+                            <strong>Key Challenge:</strong> Ensuring exact agitation regulation while dealing with
+                            fluctuating pump speeds.
+                            <strong>Result:</strong> Created a highly responsive Qt GUI panel that syncs with real-time
+                            sensors, running tests via Google Test to ensure fail-safe diagnostics.
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card glass-card">
+                        <div class="project-meta">
+                            <span class="proj-domain">DEFENSE / WAR GAMING</span>
+                            <span class="proj-client">CABS - DRDO</span>
+                        </div>
+                        <h3 class="project-title">MySIR War Simulation Engine</h3>
+                        <p class="project-summary">Engineered graphical radar screens, target tracking modules, and
+                            scenario management wrappers for defense research wargaming simulators.</p>
+                        <div class="project-tech">
+                            <span>C++ / Qt Widgets</span>
+                            <span>MFC DLLs</span>
+                            <span>UDP Networking</span>
+                            <span>Win32 API</span>
+                        </div>
+                        <div class="project-highlights">
+                            <strong>Key Challenge:</strong> Connecting old legacy scenario software scripts with new
+                            real-time graphical map plotting.
+                            <strong>Result:</strong> Compiled custom MFC DLL wrappers feeding telemetry packets to a
+                            fast Qt graphing application, rendering tracks with minimal delay.
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card glass-card">
+                        <div class="project-meta">
+                            <span class="proj-domain">TEST SYSTEM AUTOMATION</span>
+                            <span class="proj-client">Automotive Robotics</span>
+                        </div>
+                        <h3 class="project-title">Qt-Python Integration Harness</h3>
+                        <p class="project-summary">Created a TCP/IP automation system permitting Python scripts to
+                            control and trigger diagnostics on embedded C++ Qt applications.</p>
+                        <div class="project-tech">
+                            <span>C++ / Qt</span>
+                            <span>Python</span>
+                            <span>TCP/IP Sockets</span>
+                            <span>JSON-RPC</span>
+                        </div>
+                        <div class="project-highlights">
+                            <strong>Key Challenge:</strong> Building a lightweight script control interface without
+                            burdening embedded hardware memory.
+                            <strong>Result:</strong> Designed a micro TCP socket listener on the C++ side using a light
+                            JSON-RPC parser, allowing rapid automated script validation.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="testimonials-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">// CLIENT ENDORSEMENTS</span>
+                    <h2 class="section-title">Engineering Feedback</h2>
+                    <p class="section-subtitle">Real feedback from developers and managers I have integrated solutions
+                        for.</p>
+                </div>
+
+                <div class="testimonials-grid">
+                    <div class="testimonial-card glass-card">
+                        <div class="t-quote">"Jaya Bharath resolved our socket communications bottleneck in the war
+                            simulator. His C++ MFC DLL wrappers saved us months of code refactoring, yielding
+                            sub-millisecond UDP packet processing. An outstanding engineer."</div>
+                        <div class="t-author">
+                            <div class="t-author-avatar"><i class="fa-solid fa-user-shield"></i></div>
+                            <div class="t-author-info">
+                                <strong>Technical Lead</strong>
+                                <span>CABS - DRDO Simulation Project</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card glass-card">
+                        <div class="t-quote">"His GUI layouts are crisp and clean, but it was his state machine
+                            architecture and robust Google Test integration that really stood out. He made a complex
+                            agricultural control panel completely fail-safe."</div>
+                        <div class="t-author">
+                            <div class="t-author-avatar"><i class="fa-solid fa-tractor"></i></div>
+                            <div class="t-author-info">
+                                <strong>HMI Project Manager</strong>
+                                <span>John Deere Subsystem Rig</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card glass-card">
+                        <div class="t-quote">"We needed a remote consultant to configure a simulated test framework for
+                            our vehicle controls. Bharath built custom simulators that mimicked the physical CAN
+                            messages perfectly, allowing offsite software validation."</div>
+                        <div class="t-author">
+                            <div class="t-author-avatar"><i class="fa-solid fa-gears"></i></div>
+                            <div class="t-author-info">
+                                <strong>Lead Systems Architect</strong>
+                                <span>ARI Remote Testing Team</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Accordion Section -->
+        <section id="faq" class="faq-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">// FREQUENT INQUIRIES</span>
+                    <h2 class="section-title">Common Freelance Queries</h2>
+                </div>
+
+                <div class="faq-accordion-container">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Can you work remotely without physical target hardware?</span>
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Absolutely. I develop Software-in-the-Loop (SIL) simulators (similar to the radar and
+                                sprayer widgets in my Lab) that mirror target board registers and buses. This lets me
+                                write, test, and debug 90%+ of the code remotely. When the physical board is ready,
+                                final deployment takes days instead of months.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>How do you handle NDAs, Intellectual Property, and security?</span>
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>I frequently work on defense systems (DRDO CABS) and proprietary automotive panels. I
+                                sign standard corporate NDAs before sharing any project blueprints. All source code
+                                transfers are handled through secure VPNs and private git repository handoffs,
+                                guaranteeing complete IP safety.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>What standard of code quality and verification do you offer?</span>
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>All software fits strict quality guidelines: modern C++ (C++11 to C++20) or Embedded C
+                                code conformant with MISRA guidelines. Every module is accompanied by unit tests written
+                                in Google Test (GTest) or Qt Test, alongside API documentation detailing compilation
+                                scripts and class setups.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>How does billing and engagement work?</span>
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>I offer fixed-scope pricing for well-defined deliverables (e.g. building a custom Qt dial
+                                panel or a specific UDP telemetry bridge), and hourly billing for codebase diagnostics,
+                                memory leak debugging, or software architecture consulting. You can use the Project Cost
+                                Calculator above to get a preliminary budget estimate.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">// SECURE UPLINK</span>
+                    <h2 class="section-title">Initiate Contact</h2>
+                    <p class="section-subtitle">Need a specialized developer to optimize your C++ code, design a Qt
+                        interface, or model real-time systems? Send an inquiry below.</p>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Left: Details -->
+                    <div class="contact-details glass-card">
+                        <div class="details-intro">
+                            <h3>Direct Contacts</h3>
+                            <p>Feel free to reach out directly via call, email, or LinkedIn. Response time is typically
+                                within 12 hours.</p>
+                        </div>
+
+                        <div class="contact-methods">
+                            <div class="method-item">
+                                <div class="method-icon"><i class="fa-solid fa-phone"></i></div>
+                                <div class="method-info">
+                                    <span class="method-lbl">Call / WhatsApp</span>
+                                    <a href="tel:+918142645274" class="method-val">+91-8142645274</a>
+                                </div>
+                            </div>
+
+                            <div class="method-item">
+                                <div class="method-icon"><i class="fa-solid fa-envelope"></i></div>
+                                <div class="method-info">
+                                    <span class="method-lbl">Email Address</span>
+                                    <a href="mailto:breddy325@gmail.com" class="method-val">breddy325@gmail.com</a>
+                                </div>
+                            </div>
+
+                            <div class="method-item">
+                                <div class="method-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+                                <div class="method-info">
+                                    <span class="method-lbl">Professional Network</span>
+                                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
+                                        class="method-val">LinkedIn Profile</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="certifications">
+                            <h4>Education Overview</h4>
+                            <div class="edu-card">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                                <div>
+                                    <h5>B.E. in Electrical & Electronics Engineering</h5>
+                                    <span>Sathyabama Institute of Science and Technology (Class of 2022)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Form -->
+                    <div class="contact-form-container glass-card">
+                        <h3>Send Inquiry</h3>
+                        <form id="freelance-form" class="contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="form-name">Name</label>
+                                    <input type="text" id="form-name" required placeholder="e.g. John Doe">
+                                </div>
+                                <div class="form-group">
+                                    <label for="form-email">Email</label>
+                                    <input type="email" id="form-email" required placeholder="e.g. client@company.com">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="form-service">Required Service</label>
+                                <select id="form-service" required>
+                                    <option value="" disabled selected>Select an option...</option>
+                                    <option value="HMI / GUI Development">Qt/QML GUI Development</option>
+                                    <option value="Communication Protocol Integration">Communication Interface
+                                        (CAN/UDP/TCP)</option>
+                                    <option value="Simulation / SIL Engineering">System Simulator / Test Rigs</option>
+                                    <option value="Performance Optimization">Performance & Latency Tuning</option>
+                                    <option value="General Consulting">General Project Consulting</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="form-message">Project Description</label>
+                                <textarea id="form-message" rows="5" required
+                                    placeholder="Briefly describe the requirements, tech stack constraints, and timeline..."></textarea>
+                            </div>
+
+                            <div class="form-submit">
+                                <button type="submit" class="btn btn-primary btn-block" id="form-submit-btn">
+                                    <span id="btn-idle-text"><i class="fa-solid fa-paper-plane"></i> Send Secure
+                                        Message</span>
+                                    <span id="btn-loading-text" style="display: none;"><i
+                                            class="fa-solid fa-circle-notch fa-spin"></i> TRANSMITTING...</span>
+                                </button>
+                            </div>
+
+                            <div class="form-status" id="form-status-msg"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-container">
+            <p class="copyright">&copy; 2026 Jaya Bharath Reddy Dwarsala. All rights reserved. Crafted for low latency &
+                reliability.</p>
+            <div class="footer-links">
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#lab">Lab</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script file -->
+    <script src="app.js"></script>
+</body>
+
+</html>
